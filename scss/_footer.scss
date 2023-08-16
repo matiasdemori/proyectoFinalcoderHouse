@@ -1,0 +1,22 @@
+/* Footer */
+footer {
+    border-top: 1px solid black;
+    margin: 1px;
+    padding: 1px;
+    background-color: #DE8D4C;
+    border-radius: 5px;
+
+    .linksFooter {
+        list-style: none;
+        color: white;
+        display: inline-block;
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        line-height: 5px;
+
+        .nav-link {
+            color: #F5F5F5;
+        }
+    }
+}

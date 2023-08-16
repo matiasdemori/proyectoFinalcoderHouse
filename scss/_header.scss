@@ -1,0 +1,44 @@
+/* Header */
+header {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px 20px;
+    background-image: url(../img/metal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    color: white;
+
+    /* Logo */
+    .logo {
+        width: 6rem;
+        border-radius: 3px;
+    }
+
+    /* Menu Hamburguesa */
+    .hamburguesa {
+        background-color: #6b6868;
+        border-color: #9d9797;
+        color: #ffffff;
+    }
+
+    /* Navegacion */
+    nav ul {
+        list-style: none;
+        color: white;
+        display: inline-block;
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        text-transform: uppercase;
+
+    }
+
+    .navbar-nav .nav-link {
+        color: #F5F5F5;
+    }
+
+    .nav-link:hover {
+        color: #9d9797
+    }
+}
