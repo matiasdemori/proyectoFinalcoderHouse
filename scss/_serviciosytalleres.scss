@@ -1,7 +1,6 @@
 /* Servicios y Talleres */
 .tituloServiciosyTalleres {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    @include font (20px, 20px);
     text-align: center;
     font-size: 40px;
     font-weight: bold;
