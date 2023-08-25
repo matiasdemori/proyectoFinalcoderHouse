@@ -75,9 +75,6 @@ body main {
   font-family: "Roboto Slab", serif;
   text-align: justify;
   /* Titulo */
-  /* Frase del index */
-  /* Segunda frase del index */
-  /* Video */
 }
 body main .tituloPrincipal {
   text-align: center;
@@ -89,20 +86,78 @@ body main .tituloPrincipal {
   text-transform: uppercase;
   text-shadow: 2px 2px 3px black;
 }
-body main .frase {
+body main .contenedor {
+  width: 100%;
+  /* Frase del index */
+  /* Segunda frase del index */
+  /* Video */
+}
+body main .contenedor .frase {
   font-family: "Roboto Slab", serif;
   font-size: 35px;
   color: #4E2804;
+  text-align: justify;
 }
-body main .lead {
+@media (max-width: 768px) {
+  body main .contenedor .frase {
+    font-size: 30px;
+  }
+}
+@media (max-width: 576px) {
+  body main .contenedor .frase {
+    font-size: 25px;
+  }
+}
+@media (max-width: 576px) {
+  body main .contenedor .frase {
+    font-size: 20px;
+  }
+}
+body main .contenedor .parrafo {
   font-family: "Roboto Slab", serif;
   color: #4E2804;
   font-weight: 500;
 }
-body main .video {
+@media (max-width: 768px) {
+  body main .contenedor .parrafo {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  body main .contenedor .parrafo {
+    font-size: 16px;
+  }
+}
+@media (max-width: 390px) {
+  body main .contenedor .parrafo {
+    font-size: 15px;
+  }
+}
+body main .contenedor .video {
   border-color: black;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  width: 600px;
+  height: 315px;
+}
+@media (max-width: 670px) {
+  body main .contenedor .video {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  body main .contenedor .video {
+    width: 330px;
+    height: 150px;
+  }
+}
+@media (max-width: 390px) {
+  body main .contenedor .video {
+    width: 200px;
+    height: 150px;
+  }
 }
 
 /* INSTALACIONES */
@@ -111,14 +166,54 @@ body main .video {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: bold;
   color: #4E2804;
   text-transform: uppercase;
   text-shadow: 2px 2px 3px black;
 }
+@media (max-width: 670px) {
+  .tituloInstalaciones {
+    font-size: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .tituloInstalaciones {
+    font-size: 35px;
+  }
+}
+@media (max-width: 390px) {
+  .tituloInstalaciones {
+    font-size: 30px;
+  }
+}
 
-.imagenesInstalaciones {
+.instalaciones {
+  margin-top: 40px;
+}
+.instalaciones .titulosInstalaciones {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4E2804;
+}
+@media (max-width: 670px) {
+  .instalaciones .titulosInstalaciones {
+    font-size: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .instalaciones .titulosInstalaciones {
+    font-size: 30px;
+  }
+}
+@media (max-width: 390px) {
+  .instalaciones .titulosInstalaciones {
+    font-size: 25px;
+  }
+}
+.instalaciones .imagenesInstalaciones {
   width: 500px;
   height: 400px;
   border-radius: 5px;
@@ -126,22 +221,24 @@ body main .video {
   border-style: solid;
   border-color: black;
 }
-
-.textoInstalaciones {
+.instalaciones .textoInstalaciones {
   font-size: 30px;
-  margin-top: 70px;
+  margin-top: 10px;
 }
-
-.titulosInstalaciones {
-  text-align: center;
-  font-size: 50px;
-  margin-top: 15px;
-  font-weight: bold;
-  color: #4E2804;
+@media (max-width: 670px) {
+  .instalaciones .textoInstalaciones {
+    font-size: 25px;
+  }
 }
-
-.instalaciones {
-  margin-top: 40px;
+@media (max-width: 576px) {
+  .instalaciones .textoInstalaciones {
+    font-size: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .instalaciones .textoInstalaciones {
+    font-size: 15px;
+  }
 }
 
 /* Servicios y Talleres */
@@ -149,14 +246,73 @@ body main .video {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: bold;
   color: #4E2804;
   text-transform: uppercase;
   text-shadow: 2px 2px 3px black;
 }
+@media (max-width: 670px) {
+  .tituloServiciosyTalleres {
+    font-size: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .tituloServiciosyTalleres {
+    font-size: 35px;
+  }
+}
+@media (max-width: 390px) {
+  .tituloServiciosyTalleres {
+    font-size: 30px;
+  }
+}
 
-.imagenServiciosyTalleres {
+.serviciosyTalleres {
+  margin-top: 40px;
+}
+.serviciosyTalleres .titulosServiciosyTalleres {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #4E2804;
+}
+@media (max-width: 670px) {
+  .serviciosyTalleres .titulosServiciosyTalleres {
+    font-size: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .serviciosyTalleres .titulosServiciosyTalleres {
+    font-size: 30px;
+  }
+}
+@media (max-width: 390px) {
+  .serviciosyTalleres .titulosServiciosyTalleres {
+    font-size: 25px;
+  }
+}
+.serviciosyTalleres .textoServiciosyTalleres {
+  font-size: 25px;
+  margin-top: 40px;
+}
+@media (max-width: 670px) {
+  .serviciosyTalleres .textoServiciosyTalleres {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .serviciosyTalleres .textoServiciosyTalleres {
+    font-size: 18px;
+  }
+}
+@media (max-width: 390px) {
+  .serviciosyTalleres .textoServiciosyTalleres {
+    font-size: 16px;
+  }
+}
+.serviciosyTalleres .imagenServiciosyTalleres {
   width: 500px;
   height: 400px;
   border-radius: 5px;
@@ -164,22 +320,23 @@ body main .video {
   border-style: solid;
   border-color: black;
 }
-
-.textoServiciosyTalleres {
-  font-size: 25px;
-  margin-top: 40px;
+@media (max-width: 670px) {
+  .serviciosyTalleres .imagenServiciosyTalleres {
+    width: 400px;
+    height: 300px;
+  }
 }
-
-.titulosServiciosyTalleres {
-  text-align: center;
-  font-size: 40px;
-  margin-top: 15px;
-  font-weight: bold;
-  color: #4E2804;
+@media (max-width: 576px) {
+  .serviciosyTalleres .imagenServiciosyTalleres {
+    width: 350px;
+    height: 250px;
+  }
 }
-
-.serviciosyTalleres {
-  margin-top: 40px;
+@media (max-width: 390px) {
+  .serviciosyTalleres .imagenServiciosyTalleres {
+    width: 300px;
+    height: 200px;
+  }
 }
 
 .subtituloServiciosyTalleres {
@@ -190,6 +347,21 @@ body main .video {
   margin-top: 50px;
   margin-bottom: 20px;
   text-decoration: underline;
+}
+@media (max-width: 670px) {
+  .subtituloServiciosyTalleres {
+    font-size: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .subtituloServiciosyTalleres {
+    font-size: 35px;
+  }
+}
+@media (max-width: 390px) {
+  .subtituloServiciosyTalleres {
+    font-size: 30px;
+  }
 }
 
 /* Personal */
@@ -202,26 +374,59 @@ body main .video {
   color: #4E2804;
   text-transform: uppercase;
   text-shadow: 2px 2px 3px black;
+  margin-bottom: 30px;
+}
+@media (max-width: 670px) {
+  .tituloPersonal {
+    font-size: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .tituloPersonal {
+    font-size: 30px;
+  }
+}
+@media (max-width: 390px) {
+  .tituloPersonal {
+    font-size: 25px;
+  }
 }
 
-.carousel-inner {
-  width: 700px;
-  height: 400px;
+.contenedorPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorPrincipal .carrete {
+  display: flex;
   border-radius: 5px;
   border-width: 3px;
   border-style: solid;
   border-color: black;
   align-items: center;
+  margin-bottom: 20px;
+  width: 1000px;
+  height: 400px;
 }
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
+@media (max-width: 670px) {
+  .contenedorPrincipal .carrete {
+    width: 400px;
+    height: 250px;
+  }
 }
-
-.image-container img {
+@media (max-width: 576px) {
+  .contenedorPrincipal .carrete {
+    width: 330px;
+    height: 150px;
+  }
+}
+@media (max-width: 390px) {
+  .contenedorPrincipal .carrete {
+    width: 200px;
+    height: 150px;
+  }
+}
+.contenedorPrincipal .foto {
   width: 100%;
   height: 100%;
 }
@@ -233,17 +438,26 @@ body main .video {
   text-align: justify;
   margin-left: 40px;
   margin-right: 40px;
+  margin-top: 20px;
+}
+@media (max-width: 670px) {
+  .frasePersonal {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .frasePersonal {
+    font-size: 16px;
+  }
+}
+@media (max-width: 390px) {
+  .frasePersonal {
+    font-size: 15px;
+  }
 }
 
 /* CONTACTO */
-iframe {
-  display: block;
-  margin: auto;
-  align-self: center;
-  align-items: center;
-}
-
-h2 {
+h1 {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
@@ -253,8 +467,23 @@ h2 {
   text-transform: uppercase;
   text-shadow: 1px 1px 1px black;
 }
+@media (max-width: 670px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 390px) {
+  h1 {
+    font-size: 25px;
+  }
+}
 
-h3 {
+h2 {
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: center;
@@ -264,20 +493,86 @@ h3 {
   text-transform: uppercase;
   text-shadow: 1px 1px 1px black;
 }
+@media (max-width: 670px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 576px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 390px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+
+.mapa {
+  border-radius: 5px;
+  border: 3px solid #181717;
+  display: block;
+  margin: auto;
+  align-self: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 650px;
+  height: 350px;
+}
+@media (max-width: 670px) {
+  .mapa {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .mapa {
+    width: 330px;
+    height: 150px;
+  }
+}
+@media (max-width: 390px) {
+  .mapa {
+    width: 200px;
+    height: 150px;
+  }
+}
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+}
 
 form {
   margin-top: 20px;
 }
-
-label {
+form .recuadro {
+  align-items: center;
+}
+form .recuadro label {
   display: block;
   font-weight: bold;
   margin-bottom: 10px;
   color: #4E2804;
   font-size: 20px;
 }
-
-.campos {
+@media (max-width: 670px) {
+  form .recuadro label {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  form .recuadro label {
+    font-size: 16px;
+  }
+}
+@media (max-width: 390px) {
+  form .recuadro label {
+    font-size: 15px;
+  }
+}
+form .recuadro .campos {
   display: block;
   padding: 10px;
   border: 3px solid #181717;
@@ -287,8 +582,7 @@ label {
   margin-bottom: 10px;
   cursor: pointer;
 }
-
-.btnContacto {
+form .btnContacto {
   background-color: #4E3526;
   color: #FFF;
   border: none;

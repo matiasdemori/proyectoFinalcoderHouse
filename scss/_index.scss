@@ -27,25 +27,63 @@ body {
             text-shadow: 2px 2px 3px black;
         }
 
-        /* Frase del index */
-        .frase {
-            font-family: 'Roboto Slab', serif;
-            font-size: 35px;
-            color: #4E2804;
-        }
+        .contenedor {
+            width: 100%;
+        
+            /* Frase del index */
+            .frase {
+                font-family: 'Roboto Slab', serif;
+                font-size: 35px;
+                color: #4E2804;
+                text-align: justify;
+                @media (max-width: 768px) {
+                    font-size: 30px;
+                }
+                @media (max-width: 576px) {
+                    font-size: 25px;
+                }
+                @media (max-width: 576px) {
+                    font-size: 20px;
+                }
+            }
 
-        /* Segunda frase del index */
-        .lead {
-            font-family: 'Roboto Slab', serif;
-            color: #4E2804;
-            font-weight: 500;
-        }
+            /* Segunda frase del index */
+            .parrafo {
+                font-family: 'Roboto Slab', serif;
+                color: #4E2804;
+                font-weight: 500;
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                }
+                @media (max-width: 576px) {
+                    font-size: 16px;
+                }
+                @media (max-width: 390px) {
+                    font-size: 15px;
+                }
+            }
 
-        /* Video */
-        .video {
-            border-color: black;
-            border-radius: 10px;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-        }
+            /* Video */
+            .video {
+                border-color: black;
+                border-radius: 10px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+                align-items: center;
+                width: 600px;
+                height: 315px;
+                @media (max-width: 670px) {
+                    width: 500px; 
+                    height: 300px;
+                }  
+                @media (max-width: 576px) {
+                    width: 330px; 
+                    height: 150px;
+                }  
+                @media (max-width: 390px) {
+                    width: 200px; 
+                    height: 150px;
+                } 
+            }
+        }   
     }
 }
