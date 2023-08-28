@@ -4,6 +4,7 @@
 
 .mainInstalaciones {
     margin-top: 5px;
+    overflow: hidden;
     
     .tituloInstalaciones {
         @include font (20px, 20px);

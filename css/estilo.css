@@ -167,6 +167,7 @@ body main .contenedor .video {
 /* Imagenes */
 .mainInstalaciones {
   margin-top: 5px;
+  overflow: hidden;
 }
 .mainInstalaciones .tituloInstalaciones {
   margin-top: 20px;
@@ -253,6 +254,7 @@ body main .contenedor .video {
 .mainServicios {
   margin-top: 5px;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 .mainServicios .tituloServiciosyTalleres {
   margin-top: 15px;

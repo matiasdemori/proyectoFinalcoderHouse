@@ -2,6 +2,7 @@
 .mainServicios {
     margin-top: 5px;
     margin-bottom: 30px;
+    overflow: hidden;
 
     .tituloServiciosyTalleres {
         @include font (15px, 20px);
