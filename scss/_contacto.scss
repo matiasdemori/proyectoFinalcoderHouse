@@ -23,25 +23,24 @@ h1 {
 }
 
 h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 40px;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     color: #4E2804;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px black;
 
     @media (max-width: 670px) {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     @media (max-width: 576px) {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     @media (max-width: 390px) {
-        font-size: 18px;
+        font-size: 22px;
     }
 }
 
@@ -54,7 +53,7 @@ h2 {
     align-items: center;
     margin-bottom: 20px;
     margin-top: 20px;
-    width: 650px;
+    width: 800px;
     height: 350px;
 
     @media (max-width: 670px) {
@@ -80,17 +79,21 @@ h2 {
 }
 
 form {
-    margin-top: 20px;
-
+    margin-top: 5px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    
+    
     .recuadro {
         align-items: center;
 
         label {
-            display: block;
             font-weight: bold;
             margin-bottom: 10px;
             color: #4E2804;
             font-size: 20px;
+            align-items: center;
 
             @media (max-width: 670px) {
                 font-size: 18px;
@@ -106,7 +109,6 @@ form {
         }
 
         .campos {
-            display: block;
             padding: 10px;
             border: 3px solid #181717;
             border-radius: 5px;

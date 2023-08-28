@@ -94,13 +94,14 @@ body main .contenedor {
 }
 body main .contenedor .frase {
   font-family: "Roboto Slab", serif;
-  font-size: 35px;
+  font-size: 30px;
   color: #4E2804;
   text-align: justify;
+  align-items: center;
 }
 @media (max-width: 768px) {
   body main .contenedor .frase {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 @media (max-width: 576px) {
@@ -117,6 +118,8 @@ body main .contenedor .parrafo {
   font-family: "Roboto Slab", serif;
   color: #4E2804;
   font-weight: 500;
+  text-align: justify;
+  align-items: center;
 }
 @media (max-width: 768px) {
   body main .contenedor .parrafo {
@@ -162,7 +165,10 @@ body main .contenedor .video {
 
 /* INSTALACIONES */
 /* Imagenes */
-.tituloInstalaciones {
+.mainInstalaciones {
+  margin-top: 5px;
+}
+.mainInstalaciones .tituloInstalaciones {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
@@ -173,25 +179,26 @@ body main .contenedor .video {
   text-shadow: 2px 2px 3px black;
 }
 @media (max-width: 670px) {
-  .tituloInstalaciones {
+  .mainInstalaciones .tituloInstalaciones {
     font-size: 40px;
   }
 }
 @media (max-width: 576px) {
-  .tituloInstalaciones {
+  .mainInstalaciones .tituloInstalaciones {
     font-size: 35px;
   }
 }
 @media (max-width: 390px) {
-  .tituloInstalaciones {
+  .mainInstalaciones .tituloInstalaciones {
     font-size: 30px;
   }
 }
-
-.instalaciones {
+.mainInstalaciones .instalaciones {
   margin-top: 40px;
+  align-items: center;
+  margin-bottom: 70px;
 }
-.instalaciones .titulosInstalaciones {
+.mainInstalaciones .instalaciones .titulosInstalaciones {
   text-align: center;
   font-size: 40px;
   margin-top: 10px;
@@ -199,51 +206,56 @@ body main .contenedor .video {
   color: #4E2804;
 }
 @media (max-width: 670px) {
-  .instalaciones .titulosInstalaciones {
+  .mainInstalaciones .instalaciones .titulosInstalaciones {
     font-size: 35px;
   }
 }
 @media (max-width: 576px) {
-  .instalaciones .titulosInstalaciones {
+  .mainInstalaciones .instalaciones .titulosInstalaciones {
     font-size: 30px;
   }
 }
 @media (max-width: 390px) {
-  .instalaciones .titulosInstalaciones {
+  .mainInstalaciones .instalaciones .titulosInstalaciones {
     font-size: 25px;
   }
 }
-.instalaciones .imagenesInstalaciones {
-  width: 500px;
-  height: 400px;
+.mainInstalaciones .instalaciones .imagenesInstalaciones {
+  width: 700px;
+  height: 350px;
   border-radius: 5px;
   border-width: 3px;
   border-style: solid;
   border-color: black;
 }
-.instalaciones .textoInstalaciones {
+.mainInstalaciones .instalaciones .textoInstalaciones {
   font-size: 30px;
   margin-top: 10px;
+  align-items: center;
 }
 @media (max-width: 670px) {
-  .instalaciones .textoInstalaciones {
+  .mainInstalaciones .instalaciones .textoInstalaciones {
     font-size: 25px;
   }
 }
 @media (max-width: 576px) {
-  .instalaciones .textoInstalaciones {
+  .mainInstalaciones .instalaciones .textoInstalaciones {
     font-size: 20px;
   }
 }
 @media (max-width: 390px) {
-  .instalaciones .textoInstalaciones {
+  .mainInstalaciones .instalaciones .textoInstalaciones {
     font-size: 15px;
   }
 }
 
 /* Servicios y Talleres */
-.tituloServiciosyTalleres {
-  margin-top: 20px;
+.mainServicios {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.mainServicios .tituloServiciosyTalleres {
+  margin-top: 15px;
   margin-bottom: 20px;
   text-align: center;
   font-size: 45px;
@@ -253,25 +265,25 @@ body main .contenedor .video {
   text-shadow: 2px 2px 3px black;
 }
 @media (max-width: 670px) {
-  .tituloServiciosyTalleres {
+  .mainServicios .tituloServiciosyTalleres {
     font-size: 40px;
   }
 }
 @media (max-width: 576px) {
-  .tituloServiciosyTalleres {
+  .mainServicios .tituloServiciosyTalleres {
     font-size: 35px;
   }
 }
 @media (max-width: 390px) {
-  .tituloServiciosyTalleres {
+  .mainServicios .tituloServiciosyTalleres {
     font-size: 30px;
   }
 }
-
-.serviciosyTalleres {
-  margin-top: 40px;
+.mainServicios .serviciosyTalleres {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
-.serviciosyTalleres .titulosServiciosyTalleres {
+.mainServicios .serviciosyTalleres .titulosServiciosyTalleres {
   text-align: center;
   font-size: 40px;
   margin-top: 15px;
@@ -279,41 +291,41 @@ body main .contenedor .video {
   color: #4E2804;
 }
 @media (max-width: 670px) {
-  .serviciosyTalleres .titulosServiciosyTalleres {
+  .mainServicios .serviciosyTalleres .titulosServiciosyTalleres {
     font-size: 35px;
   }
 }
 @media (max-width: 576px) {
-  .serviciosyTalleres .titulosServiciosyTalleres {
+  .mainServicios .serviciosyTalleres .titulosServiciosyTalleres {
     font-size: 30px;
   }
 }
 @media (max-width: 390px) {
-  .serviciosyTalleres .titulosServiciosyTalleres {
+  .mainServicios .serviciosyTalleres .titulosServiciosyTalleres {
     font-size: 25px;
   }
 }
-.serviciosyTalleres .textoServiciosyTalleres {
+.mainServicios .serviciosyTalleres .textoServiciosyTalleres {
   font-size: 25px;
   margin-top: 40px;
 }
 @media (max-width: 670px) {
-  .serviciosyTalleres .textoServiciosyTalleres {
+  .mainServicios .serviciosyTalleres .textoServiciosyTalleres {
     font-size: 20px;
   }
 }
 @media (max-width: 576px) {
-  .serviciosyTalleres .textoServiciosyTalleres {
+  .mainServicios .serviciosyTalleres .textoServiciosyTalleres {
     font-size: 18px;
   }
 }
 @media (max-width: 390px) {
-  .serviciosyTalleres .textoServiciosyTalleres {
+  .mainServicios .serviciosyTalleres .textoServiciosyTalleres {
     font-size: 16px;
   }
 }
-.serviciosyTalleres .imagenServiciosyTalleres {
-  width: 500px;
+.mainServicios .serviciosyTalleres .imagenServiciosyTalleres {
+  width: 700px;
   height: 400px;
   border-radius: 5px;
   border-width: 3px;
@@ -321,45 +333,43 @@ body main .contenedor .video {
   border-color: black;
 }
 @media (max-width: 670px) {
-  .serviciosyTalleres .imagenServiciosyTalleres {
+  .mainServicios .serviciosyTalleres .imagenServiciosyTalleres {
     width: 400px;
     height: 300px;
   }
 }
 @media (max-width: 576px) {
-  .serviciosyTalleres .imagenServiciosyTalleres {
+  .mainServicios .serviciosyTalleres .imagenServiciosyTalleres {
     width: 350px;
     height: 250px;
   }
 }
 @media (max-width: 390px) {
-  .serviciosyTalleres .imagenServiciosyTalleres {
+  .mainServicios .serviciosyTalleres .imagenServiciosyTalleres {
     width: 300px;
     height: 200px;
   }
 }
-
-.subtituloServiciosyTalleres {
+.mainServicios .subtituloServiciosyTalleres {
   text-align: center;
   font-size: 45px;
   margin-top: 15px;
   color: #4E2804;
   margin-top: 50px;
   margin-bottom: 20px;
-  text-decoration: underline;
 }
 @media (max-width: 670px) {
-  .subtituloServiciosyTalleres {
+  .mainServicios .subtituloServiciosyTalleres {
     font-size: 40px;
   }
 }
 @media (max-width: 576px) {
-  .subtituloServiciosyTalleres {
+  .mainServicios .subtituloServiciosyTalleres {
     font-size: 35px;
   }
 }
 @media (max-width: 390px) {
-  .subtituloServiciosyTalleres {
+  .mainServicios .subtituloServiciosyTalleres {
     font-size: 30px;
   }
 }
@@ -398,15 +408,13 @@ body main .contenedor .video {
   align-items: center;
 }
 .contenedorPrincipal .carrete {
-  display: flex;
   border-radius: 5px;
   border-width: 3px;
   border-style: solid;
   border-color: black;
-  align-items: center;
   margin-bottom: 20px;
-  width: 1000px;
-  height: 400px;
+  width: 900px;
+  height: 500px;
 }
 @media (max-width: 670px) {
   .contenedorPrincipal .carrete {
@@ -426,7 +434,11 @@ body main .contenedor .video {
     height: 150px;
   }
 }
-.contenedorPrincipal .foto {
+.contenedorPrincipal .carrete .carruselFoto {
+  width: 100%;
+  height: 100%;
+}
+.contenedorPrincipal .carrete .carruselFoto .foto {
   width: 100%;
   height: 100%;
 }
@@ -484,10 +496,9 @@ h1 {
 }
 
 h2 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 40px;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   color: #4E2804;
   text-transform: uppercase;
@@ -495,17 +506,17 @@ h2 {
 }
 @media (max-width: 670px) {
   h2 {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 @media (max-width: 576px) {
   h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 @media (max-width: 390px) {
   h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
@@ -518,7 +529,7 @@ h2 {
   align-items: center;
   margin-bottom: 20px;
   margin-top: 20px;
-  width: 650px;
+  width: 800px;
   height: 350px;
 }
 @media (max-width: 670px) {
@@ -545,17 +556,20 @@ h2 {
 }
 
 form {
-  margin-top: 20px;
+  margin-top: 5px;
+  align-items: center;
+  align-content: center;
+  align-self: center;
 }
 form .recuadro {
   align-items: center;
 }
 form .recuadro label {
-  display: block;
   font-weight: bold;
   margin-bottom: 10px;
   color: #4E2804;
   font-size: 20px;
+  align-items: center;
 }
 @media (max-width: 670px) {
   form .recuadro label {
@@ -573,7 +587,6 @@ form .recuadro label {
   }
 }
 form .recuadro .campos {
-  display: block;
   padding: 10px;
   border: 3px solid #181717;
   border-radius: 5px;

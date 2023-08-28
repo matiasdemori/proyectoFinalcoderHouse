@@ -33,11 +33,12 @@ body {
             /* Frase del index */
             .frase {
                 font-family: 'Roboto Slab', serif;
-                font-size: 35px;
+                font-size: 30px;
                 color: #4E2804;
                 text-align: justify;
+                align-items: center;
                 @media (max-width: 768px) {
-                    font-size: 30px;
+                    font-size: 28px;
                 }
                 @media (max-width: 576px) {
                     font-size: 25px;
@@ -52,6 +53,8 @@ body {
                 font-family: 'Roboto Slab', serif;
                 color: #4E2804;
                 font-weight: 500;
+                text-align: justify;
+                align-items: center;
                 @media (max-width: 768px) {
                     font-size: 18px;
                 }

@@ -2,72 +2,80 @@
 
 /* Imagenes */
 
-.tituloInstalaciones {
-    @include font (20px, 20px);
-    text-align: center;
-    font-size: 45px;
-    font-weight: bold;
-    color: #4E2804;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 3px black;
-    @media (max-width: 670px) {
-        font-size: 40px;
-    }
-
-    @media (max-width: 576px) {
-        font-size: 35px;
-    }
-
-    @media (max-width: 390px) {
-        font-size: 30px;
-    }
-}
-
-.instalaciones {
-    margin-top: 40px;
-
-    .titulosInstalaciones {
+.mainInstalaciones {
+    margin-top: 5px;
+    
+    .tituloInstalaciones {
+        @include font (20px, 20px);
         text-align: center;
-        font-size: 40px;
-        margin-top: 10px;
+        font-size: 45px;
         font-weight: bold;
         color: #4E2804;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 3px black;
         @media (max-width: 670px) {
+            font-size: 40px;
+        }
+    
+        @media (max-width: 576px) {
             font-size: 35px;
         }
-
-        @media (max-width: 576px) {
+    
+        @media (max-width: 390px) {
             font-size: 30px;
         }
-
-        @media (max-width: 390px) {
-            font-size: 25px;
-        }
     }
-
-    .imagenesInstalaciones {
-        width: 500px;
-        height: 400px;
-        border-radius: 5px;
-        border-width: 3px;
-        border-style: solid;
-        border-color: black;
-    }
-
-    .textoInstalaciones {
-        font-size: 30px;
-        margin-top: 10px;
-
-        @media (max-width: 670px) {
-            font-size: 25px;
+    
+    .instalaciones {
+        margin-top: 40px;
+        align-items: center;
+        margin-bottom: 70px;
+    
+        .titulosInstalaciones {
+            text-align: center;
+            font-size: 40px;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #4E2804;
+            @media (max-width: 670px) {
+                font-size: 35px;
+            }
+    
+            @media (max-width: 576px) {
+                font-size: 30px;
+            }
+    
+            @media (max-width: 390px) {
+                font-size: 25px;
+            }
         }
-
-        @media (max-width: 576px) {
-            font-size: 20px;
+    
+        .imagenesInstalaciones {
+            width: 700px;
+            height: 350px;
+            border-radius: 5px;
+            border-width: 3px;
+            border-style: solid;
+            border-color: black;
         }
-
-        @media (max-width: 390px) {
-            font-size: 15px;
+    
+        .textoInstalaciones {
+            font-size: 30px;
+            margin-top: 10px;
+            align-items: center;
+    
+            @media (max-width: 670px) {
+                font-size: 25px;
+            }
+    
+            @media (max-width: 576px) {
+                font-size: 20px;
+            }
+    
+            @media (max-width: 390px) {
+                font-size: 15px;
+            }
         }
     }
 }
+
